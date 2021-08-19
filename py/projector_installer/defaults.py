@@ -8,7 +8,7 @@ from dataclasses import dataclass
 from os.path import join, isfile
 from typing import Optional, ClassVar
 
-from projector_installer.global_config import config_dir
+from py.projector_installer.global_config import config_dir
 
 DEFAULTS_INI = 'defaults.ini'
 

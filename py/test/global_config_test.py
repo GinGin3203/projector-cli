@@ -1,8 +1,8 @@
 """Test global_config.py module"""
-from unittest import TestCase
 from os.path import expanduser
+from unittest import TestCase
 
-from projector_installer.global_config import get_changelog_url, \
+from py.projector_installer.global_config import get_changelog_url, \
     get_apps_dir, get_run_configs_dir, get_ssl_properties_file, \
     get_download_cache_dir, get_ssl_dir
 

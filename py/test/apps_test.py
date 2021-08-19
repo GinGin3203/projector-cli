@@ -1,9 +1,10 @@
 """Test apps.py module"""
-from unittest import TestCase
 from os.path import join, expanduser
+from unittest import TestCase
+
 import pytest
 
-from projector_installer.apps import get_app_path, is_path_to_app, parse_version, \
+from py.projector_installer.apps import get_app_path, is_path_to_app, parse_version, \
     get_data_dir_from_script, is_mps_dir, VersionFormatError
 
 

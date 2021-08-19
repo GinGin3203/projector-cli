@@ -1,6 +1,7 @@
 """Test ide_update.py module"""
 from unittest import TestCase
-from projector_installer.ide_update import is_updatable_ide
+
+from py.projector_installer.ide_update import is_updatable_ide
 
 
 class IdeUpdateTest(TestCase):

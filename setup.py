@@ -5,24 +5,24 @@
 
 """projector-installer setup file."""
 import sys
-from shutil import copyfile, rmtree
-from os.path import isfile, join
 from os import remove
+from os.path import isfile, join
+from shutil import copyfile, rmtree
 from typing import List
+
+from setuptools import Command
 from setuptools import setup  # type: ignore
 from setuptools.command.install import install  # type: ignore
-from setuptools import Command
 
-from projector_installer.utils import create_dir_if_not_exist, download_file, unpack_zip_file, \
+from py.projector_installer import create_dir_if_not_exist, download_file, unpack_zip_file, \
     get_file_name_from_url, copy_all_files
-
-from projector_installer.global_config import BUNDLED_DIR, SERVER_DIR
+from py.projector_installer.global_config import BUNDLED_DIR, SERVER_DIR
 
 
 def copy_license() -> None:
     """Copy license file to package"""
     if isfile('license/LICENSE.txt'):
-        copyfile('license/LICENSE.txt', 'projector_installer/LICENSE.txt')
+        copyfile('license/LICENSE.txt', 'py/projector_installer/LICENSE.txt')
 
 
 with open('requirements.txt') as f:
@@ -31,7 +31,7 @@ with open('requirements.txt') as f:
 if sys.version_info < (3, 7):
     requirements.append('dataclasses')
 
-PACKAGE_DIR = 'projector_installer'
+PACKAGE_DIR = 'py/projector_installer'
 bundled_dir = join(PACKAGE_DIR, BUNDLED_DIR)
 server_dir = join(bundled_dir, SERVER_DIR)
 

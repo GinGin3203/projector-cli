@@ -1,6 +1,7 @@
 """Test log_utils.py module"""
 from unittest import TestCase
-from projector_installer.log_utils import is_unexpected_exit
+
+from py.projector_installer.log_utils import is_unexpected_exit
 
 
 class LogUtilsTest(TestCase):

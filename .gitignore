@@ -5,5 +5,5 @@ venv
 build
 dist
 __pycache__
-projector_installer/LICENSE.txt
-projector_installer/bundled 
+py/projector_installer/LICENSE.txt
+py/projector_installer/bundled

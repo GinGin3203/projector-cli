@@ -1,7 +1,7 @@
 """Test config_generator.py module"""
 from unittest import TestCase
 
-from projector_installer.config_generator import token_quote
+from py.projector_installer.config_generator import token_quote
 
 
 class ConfigGeneratorTest(TestCase):

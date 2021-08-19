@@ -1,11 +1,11 @@
 """Test dialogs.py module"""
+import sys
 from unittest import TestCase
 from unittest import mock
 
-import sys
 import pytest
 
-from projector_installer.dialogs import get_user_input, is_boolean_input, ask, \
+from py.projector_installer.dialogs import get_user_input, is_boolean_input, ask, \
     prompt_with_default, get_all_listening_ports
 
 

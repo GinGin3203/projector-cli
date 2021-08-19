@@ -1,9 +1,10 @@
 """Test actions.py module"""
 from unittest import TestCase
+
 import pytest
 
-from projector_installer.actions import is_compatible_java
-from projector_installer.apps import UnknownIDEException
+from py.projector_installer.actions import is_compatible_java
+from py.projector_installer.apps import UnknownIDEException
 
 
 class ActionsTest(TestCase):
