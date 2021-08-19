@@ -149,7 +149,7 @@ def check_bundled_server() -> None:
                   'Most probably you installed or upgraded projector-installer from sources.\n' \
                   'To resolve the issue follow this: ' \
                   'https://github.com/JetBrains/projector-installer/blob/master/' \
-                  'README-DEV.md#Install-from-source instruction. ' \
+                  'OLD-README-DEV.md#Install-from-source instruction. ' \
                   'Do not forget run `python3 setup.py bundle` BEFORE `pip install`!\n' \
                   'Or reinstall projector-installer from pypi.'
         secho(message, bold=True)
@@ -216,7 +216,7 @@ def do_run_config(config_name: Optional[str] = None, run_browser: bool = True) -
         print(get_ca_crt_file())
         print('Refer to: ')
         print('https://github.com/JetBrains/projector-installer/blob/master/'
-              'README.md#what-is-secure-connection')
+              'OLD-README.md#what-is-secure-connection')
 
     if not is_compatible_java(run_config.path_to_app):
         print('Bundled JVM is incompatible with Projector.')
