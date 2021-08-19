@@ -26,7 +26,7 @@ The main goal of the project is to implement a CLI tool that supports the same f
 The project will reach version v1.0 when *all* of **projector-installer** features will have been successfully (i.e.
 without major issues) re-implemented.
 
-Further features may include
+Wokr on further features may include
 [**projector-docker**](https://github.com/JetBrains/projector-docker) scripts functionality.
 
 ## Why re-implement?
